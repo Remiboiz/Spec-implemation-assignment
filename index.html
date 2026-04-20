@@ -19,10 +19,23 @@
             border: 1px solid #ccc;
         }
 
-        .start {}
+        .start { background: green; }
+        .goal {background: red; }
+        .wall {background: black; }
+        .visited {background: lightblue;}
+        .path { background: yellow; }
     </style>
 </head>
 <body>
+
+<h2>Pathfinding Visualizer</h2>
+
+<button onclick="runBFS()">Run BFS</button>
+<button onclick="resetGrid()">Reset</button>
+
+<div id="grid"></div>
+
+<script src="script.js"></script>
     
 </body>
 </html>
